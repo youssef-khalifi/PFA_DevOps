@@ -20,6 +20,20 @@ pipeline{
             }
         
         }
+
+        stage("Build the Application"){
+            steps{
+                sh "mvn clean package"
+            }
+        
+        }
+
+        stage("Test the Application"){
+            steps{
+                sh "mvn test"
+            }
+        
+        }
     }
 
 
