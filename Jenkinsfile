@@ -8,7 +8,7 @@ pipeline{
     }
 
      environment {
-        APP_NAME = "PFA_DevOps"
+        APP_NAME = "pfa_devops"
         RELEASE = "1.0.0"
         DOCKER_USER = "youssefkhalifi767228"
         DOCKER_PASS = 'dockerhub'
