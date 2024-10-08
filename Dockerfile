@@ -5,6 +5,6 @@ RUN mvn clean install
 
 FROM eclipse-temurin:17.0.6_10-jdk
 WORKDIR /app
-COPY --from=build /app/target/PFA.jar /app/
+COPY --from=build /app/target/PFA*.jar /app/
 EXPOSE 8082
-CMD ["java", "-jar","PFA.jar"]
+CMD ["java", "-jar","PFA*.jar"]
